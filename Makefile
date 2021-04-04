@@ -2,7 +2,7 @@ CXX = g++
 CXXFLAGS = -std=c++14 -g -Wall -MMD -Werror=vla
 OBJECTS = main.o cell.o textdisplay.o grid.o
 DEPENDS = ${OBJECTS:.o=.d}
-EXEC = a4q3
+EXEC = reversi
 
 ${EXEC} : ${OBJECTS}
 	${CXX} ${CXXFLAGS} ${OBJECTS} -o ${EXEC}
